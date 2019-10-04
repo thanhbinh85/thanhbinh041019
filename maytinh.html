@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="So1" type="text"><input id="So2" type="text" >
+<br>
+<button id="+" onclick="Addition()">Addition(+)</button>
+<button id="-" onclick="Subtraction()">Subtraction(-)</button>
+<button id="*" onclick="Multiplication()">Multiplication(x)</button>
+<button id="/" onclick="Division()">Division(/)</button>
+<br>
+<p>KẾT QUẢ</p>
+<p id= "result"> </p>
+<script>
+    function Addition(){
+        let a=parseFloat(document.getElementById("So1").value);
+        let b=parseFloat(document.getElementById("So2").value);
+        let result = (a+b);
+    document.getElementById("result").innerHTML=result;}
+
+    function Subtraction() {
+        let a=parseFloat(document.getElementById("So1").value);
+        let b=parseFloat(document.getElementById("So2").value);
+        let result1 = (a-b);
+        document.getElementById("result").innerHTML= result1;}
+        function Multiplication() {
+            let a=parseFloat(document.getElementById("So1").value);
+            let b=parseFloat(document.getElementById("So2").value);
+            let result2 =(a*b);
+            document.getElementById("result").innerHTML=result2;}
+            function Division() {
+                let a=parseFloat(document.getElementById("So1").value);
+                let b=parseFloat(document.getElementById("So2").value);
+                let result3=(a/b)
+                document.getElementById("result").innerHTML=result3}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
