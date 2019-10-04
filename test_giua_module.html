@@ -6,9 +6,17 @@
 </head>
 <body>
 <script>
-    let toan =parseInt(prompt("Điểm môn Toán",''));
-    let van = parseInt(prompt("Điểm môn Văn",''));
-    let anh = parseInt(prompt("Điểm môn Tiếng Anh",''));
+    let toan;
+    do{
+        let toan =parseInt(prompt("Điểm môn Toán",''));
+    }
+    while (toan<0||toan>10);
+    let van;
+    do{let van = parseInt(prompt("Điểm môn Văn",''));}
+    while (van>0||van<=10);
+    let anh;
+    do{let anh = parseInt(prompt("Điểm môn Tiếng Anh",''));}
+    while (anh>0||anh<=10) ;
     dtb=(toan*2+van+anh*2)/5
     document.write("Điểm trung bình là: "+dtb);
 
